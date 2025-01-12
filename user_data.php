@@ -3,7 +3,7 @@
 include "koneksi.php";
 
 $hlm = (isset($_POST['hlm']) && $_POST['hlm'] > 0) ? $_POST['hlm'] : 1;
-$limit = 4; //paginasi masing-masing 4 item tiap halaman
+$limit = 5; //paginasi masing-masing 5 item tiap halaman
 $limit_start = ($hlm - 1) * $limit;
 
 if ($limit_start < 0) {

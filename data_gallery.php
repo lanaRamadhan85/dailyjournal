@@ -2,7 +2,7 @@
 include "koneksi.php";
 
 $hlm = (isset($_POST['hlm']) && is_numeric($_POST['hlm']) && $_POST['hlm'] > 0) ? (int)$_POST['hlm'] : 1;
-$limit = 4;
+$limit = 3;
 $limit_start = ($hlm - 1) * $limit;
 
 // menajga agar limit start tidak negatif
